@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:  #001a33;
+    background: linear-gradient(to right , #001a33, #00001a
+
+);
+
+
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color:  #00001a; /* Set your desired background color */
+    text-align: center; /* Center the navbar */
+    opacity :30% ;
+    background: linear-gradient(to right , #001a33, #00001a)
+
+  }
+
+  .navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background: linear-gradient(to right, #008fb3, #001a33);
+
+  }
+
+
+  .introduction {
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of elements */
+      }
+
+  .introduction-image {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .introduction-text {
+
+    width: 50%;   
+    margin-right:100PX;
+    margin-top: 100px;   
+
+  }
+  
+  .action-button {
+    background: linear-gradient(to right, #008fb3, #001a33);
+    display: inline-block;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+.action-button:hover {
+background: linear-gradient(to right, #001a33, #008fb3);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+color: #ecf0f1;
+}
+  p{
+    font-style:italic ;
+    color:#ddd;
+  }
+  h1{
+    font-style: italic;
+    color:#00a3cc ;
+  }
+
+  .button-options {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .button-options button {
+background: linear-gradient(to right, #008fb3, #001a33);
+color: white;
+padding: 12px 20px;
+margin: 8px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.button-options button:hover {
+background: linear-gradient(to right, #001a33, #008fb3);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+color: #ecf0f1;
+}
+.module-options button{
+background: linear-gradient(to right, #008fb3, #001a33);
+color: white;
+padding: 12px 20px;
+margin: 8px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+.module-options {
+display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.module-options button:hover{
+background: linear-gradient(to right, #001a33, #008fb3);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+color: #ecf0f1;
+}
+
+/* Add initial styling to h1 titles */
+h1 {
+  font-size: 30px;
+  color: #00a3cc;
+  margin-bottom: 20px;
+  text-decoration: none; /* Remove default underline */
+  position: relative;
+  display: inline-block;
+}
+/* Add initial styling to h1 titles */
+h1 {
+  font-size: 30px;
+  color: #00a3cc;
+  margin-bottom: 20px;
+  text-decoration: none; /* Remove default underline */
+  position: relative;
+  display: inline-block;
+}
+
+/* Add an underline animation when entering the page */
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00a3cc;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: visibility 0s, transform 0.5s ease-out;
+}
+
+h1:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+#additionalButtonsContainer {
+      display: none; /* Hide the additional buttons initially */
+    }
+.additional-buttons-container button{
+  background: linear-gradient(to right, rgb(41, 31, 31) , rgb(108, 163, 235));
+}
+.additional-buttons-container button:hover{
+  background: linear-gradient(to left, rgb(41, 31, 31), black);
+}

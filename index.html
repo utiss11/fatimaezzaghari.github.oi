@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Site SMI</title>
+  <link rel="stylesheet" href="projet.css">
+  <script src="projet.js" defer></script>
+</head>
+<body></body>
+  <div  class="introduction">
+    <img src="pic4.jpg" alt="SMI Image" class="introduction-image">
+    <div class="introduction-text">
+      <h1>Bienvenue sur notre site SMI!</h1>
+      <p>Ici, vous trouverez tout ce dont vous avez besoin sur le SMI. <BR>Explorez nos cours, exercices, examens, et plus encore.</p>
+        <a href="javascript:void(0)" class="action-button" onclick="toggleButtons()">Voir les Cours et les tds </a>
+      <footer>
+        <p>&copy; 2023 by FATIMA EZZAGHARI . All rights reserved.</p>
+    </footer>
+    </div> 
+
+  <div class="button-options" id="buttonOptions">
+    <h1> Les modules :</h1>
+    <p>Ici, vous trouverez toutes les informations dont vous avez besoin sur votre module.  </p>
+    <button onclick="toggleModuleOptions('AlgorithmII')">Algorithm II</button>
+    <button onclick="toggleModuleOptions('ProgrammationC')">programmation C </button>
+    <button onclick="toggleModuleOptions('SystemeExploitation')">Systeme d'exploitation</button> 
+    <button onclick="toggleModuleOptions('statistiquesetprobabilites')">statistiques et probabilites </button>
+    <button onclick="toggleModuleOptions('ElectroniqueNumerique')">Electronique Numerique</button>
+<button onclick="toggleModuleOptions('Technologieduweb')">Technologie du web</button>
+  </div>
+<div class="module-options" id="AlgorithmIIOptions" style="display: none">
+   <button id="coursButton" onclick="toggleAdditionalButtons('additionalButtonsContainer')">Cours</button>
+    <div id="additionalButtonsContainer" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1uIAiC2yrqGnx2ypUWTyMtK3Evo7pjxq9/view?usp=sharing')">CHAPITRE 1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1VYR4HyGjJzzmo7rD_OCUeOVh4EQMJ1zv/view?usp=sharing')">CHAPITRE 2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1ETCoZhL6oABS_z6cATHV-IWsFRlDqt86/view?usp=sharing')">CHAPITRE 3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1ChbH3de_CZQnD0zV3SGmJAHDeUnbtEXp/view?usp=sharing')">CHAPITRE 4</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1GThEEnLgJXRyeM_cf35YU0R6bShEcVxG/view?usp=sharing')">CHAPITRE 5</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1RqQi12ikbgGFcbp3o_PG6pdPznGE5oBF/view?usp=sharing')">CHAPITRE 6</button>
+    </div>
+    <button id="tdButton"  onclick="toggleAdditionalButtons('additionalButtonsContainer2')" >TD</button>
+      <div  id="additionalButtonsContainer2" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1nJANoQrV51RKo71DoLqVPP0wZv7B2rhs/view?usp=sharing')">TD1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1GM5G-3Xp-XX2ZtGoZDD7TyWKqCXBVwMZ/view?usp=sharing')">TD2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1MTHuRAhORLjJ5JeTElDn4S9rz4mEXcNI/view?usp=sharing')">TD3</button>
+  </div>
+  </div>
+  <div class="module-options" id="ProgrammationCOptions" style="display: none;">
+    <button  id="coursButton2" onclick="toggleAdditionalButtons('additionalButtonsContainer3')">Cours</button>
+    <div  id="additionalButtonsContainer3"  class="additional-buttons-container" >
+      <button onclick="loadPDF('https://drive.google.com/file/d/16Tn8Tcq8lQOx9GRezNkgxzSHWZOAFPbo/preview')">CHAPITRE 1</button>
+      <button onclick="('https://drive.google.com/file/d/1dsBEW4kOMc3Pu_5CbaA_NvMFkb-0VOPe/view?usp=sharing')">CHAPITRE 2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1SfqeOTgx81qpe3_neS6nMe1DyWsFwNDn/view?usp=sharing')">CHAPITRE 3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1Rs9EZ6kkJTNOtYG9CO-SgCNplaWAfxyQ/view?usp=sharing')">CHAPITRE 4</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/15lRwoK8z2kJmpEQwkAlq5gLymmAjtKeJ/view?usp=sharing')">CHAPITRE 5</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1374r8js-XzY5KTgNSlDRy52t9avVVqvH/view?usp=sharing')">CHAPITRE 6</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1kIzTVF_3oBWu_L720VJEZyTdd7EmW3gx/view?usp=sharing')">CHAPITRE 7</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1GMV_s5S53v6UXj7BKxQZOLrIVgQtsXzY/view?usp=sharing')">CHAPITRE 8</button>
+    </div>
+    <button  id="tdButton2"  onclick="toggleAdditionalButtons('additionalButtonsContainer4')">TD</button>
+    <div  id="additionalButtonsContainer4"   class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1yhLt0YesLW5Aal8d--f-xolSdJKtpqrg/view?usp=sharing')">TD 1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1q13H4q_6mwmeT6u1_s1QQdOBt_r1SweQ/view?usp=sharing')">TD 2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1l7my0-ohnVtRmd8R1Jj2olcm4Lw1ykRW/view?usp=sharing')">TD 3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1VO6fL1Lns0ohCB_h41IZ0pJWHFI9LfYQ/view?usp=sharing')">TD 4</button>
+  </div>
+    <button id="tpButton"  onclick="toggleAdditionalButtons('additionalButtonsContainer5')">TP</button>
+    <div  id="additionalButtonsContainer5" class="additional-buttons-container">
+    <button onclick="loadPDF('https://drive.google.com/file/d/1yhLt0YesLW5Aal8d--f-xolSdJKtpqrg/view?usp=sharing')">TP1</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1q13H4q_6mwmeT6u1_s1QQdOBt_r1SweQ/view?usp=sharing')">TP2</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1l7my0-ohnVtRmd8R1Jj2olcm4Lw1ykRW/view?usp=sharing')">TP3</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1VO6fL1Lns0ohCB_h41IZ0pJWHFI9LfYQ/view?usp=sharing')">TP4</button>
+
+  </div>
+  </div>
+  
+  
+  <div class="module-options" id="SystemeExploitationOptions" style="display: none;">
+    <button id="coursButton3" onclick="toggleAdditionalButtons('additionalButtonsContainer6')">Cours</button>
+    <div id="additionalButtonsContainer6" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1fe7nsyOaZ82hRnaZ4rff6lEeIs7LFFKo/view?usp=sharing')">CHAPITRE 1 </button>
+    
+    </div>
+    <button id="tdButton3" onclick="toggleAdditionalButtons('additionalButtonsContainer7')">TD</button>
+    <div  id="additionalButtonsContainer7" class="additional-buttons-container">
+    <button  onclick="loadPDF('https://drive.google.com/file/d/1eUhVbQGMHKkZmBJZ6GCwATrmPQLv889z/view?usp=sharing')">TD1</button>
+    <button  onclick="loadPDF('https://drive.google.com/file/d/1125UPYzahOgOIPxQEKZMM40iUqnUaj0v/view?usp=sharing')"> TD2</button>
+    <button  onclick="loadPDF('https://drive.google.com/file/d/1XKrSdrec19nUgy1xfeKS9P8gsYo23rK2/view?usp=sharing')">TD3</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1gxt8GltgWkMyAiMMJUyLF6jpqPgBrzHb/view?usp=sharing')">TD4</button>
+
+    </div>
+    <button  id="tpButton2"  onclick="toggleAdditionalButtons('additionalButtonsContainer8')">TP</button>
+    <div  id="additionalButtonsContainer8" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1W1wreRFxmjHJPQwoTgx-vGnpzGKB93XO/view?usp=sharing')">TP1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1tPuYNY-nIvq6qO67H_9n_Z3kqeRV-8n_/view?usp=sharing')">TP2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1npLVS0x7rDpcR_nVfwgkYEJcjyO1FICP/view?usp=sharing')">TP3</button>
+  </div>
+  </div>
+
+  <div class="module-options" id="statistiquesetprobabilitesOptions" style="display: none;">
+    <button id="coursButton4"  onclick="toggleAdditionalButtons('additionalButtonsContainer9')" >Cours</button>
+   <div id="additionalButtonsContainer9"  class="additional-buttons-container">
+    <button onclick="loadPDF('https://drive.google.com/file/d/16PnvGJzmJlfg-m7zofsgDk1cXqKkMlLI/view?usp=sharing')">CHAPITRE 1</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1mOoLT-zTa1191pCWEb1KtSY8WYxsZX49/view?usp=sharing')">CHAPITRE 2</button>  </div>
+  <button id="tdButton4"  onclick="toggleAdditionalButtons('additionalButtonsContainerr')" >TD</button>
+<div id="additionalButtonsContainerr"  class="additional-buttons-container">
+  <button  onclick="loadPDF('https://drive.google.com/file/d/1AzoNm1e0dWCdMgXN4EnbyzvXi3hdITt1/view?usp=sharing')">TD1</button>
+  <button  onclick="loadPDF('https://drive.google.com/file/d/1GAVmV4v6N0xys_qGJUePTEJBTh_tonWF/view?usp=sharing')"> TD2</button>
+  <button  onclick="loadPDF('https://drive.google.com/file/d/1auKw2Uu96NniYWdjPSKan4-3puq2IfNZ/view?usp=sharing')">TD3</button>
+  <button  onclick="loadPDF('https://drive.google.com/file/d/1Zr4xoG1OfsLfhQFdvWiSTRcIPUpq-wTu/view?usp=sharing')">TD4</button>
+  <button  onclick="loadPDF('https://drive.google.com/file/d/1bLSkNtlp5Of8J2cpQiGCaXEf_Cx9KxOr/view?usp=sharing')">TD5</button>
+  </div>
+     </div>
+  </div>
+
+  <div class="module-options" id="ElectroniqueNumeriqueOptions" style="display: none;">
+    <button  id="coursButton5"  onclick="toggleAdditionalButtons('additionalButtonsContainerE')">Cours</button>
+    <div id="additionalButtonsContainerE" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/12iJwxwcF6RwzPWcD9NX71UccI1AFLZEa/view?usp=sharing')">CHAPITRE 1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1X1pFRhDkl9dVDykBJSBLWI51SX5ntyTm/view?usp=sharing')">CHAPITRE 2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1_1zhv1bKf1ZUmagbPR64Va722vrfkUkS/view?usp=sharing')">CHAPITRE 3</button>
+    <button  id="tdButton5"  onclick="toggleAdditionalButtons('additionalButtonsContainerET')">TD</button>
+    <div  id="additionalButtonsContainerET" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1Y_KHvLWJ2jNuuINnKZ2Kh_D1QW7hydbp/view?usp=sharing')">TD1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1Y3N8l9M3uFU1bat1pwT2zLeM59WvbaDi/view?usp=sharing')">TD2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1hPXTD9qwBUuPurt_sSNoveFvVcx15fDj/view?usp=sharing')">TD3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1jlYMdofaNw81yHf0gqcsbW66qmFWYUUS/view?usp=sharing')">TD4</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1i2CCZS_YiCyRQc_fdbclpmTiqZxJZBT4/view?usp=sharing')">TD5</button>
+    </div>
+    <button  id="tpButton3"  onclick="toggleAdditionalButtons('additionalButtonsContainerEP')">TP</button>
+    <div id="additionalButtonsContainerEP" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1qdxWdb4E6olLWtapjP3l0BA9frtkE71y/view?usp=sharing')">TP1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1L893JZLb_04CvHx-4Z84uyv-BMvcdrQV/view?usp=sharing')">TP2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1LEo34LTWp0ia2RV20WFe6jQhjaj4sSA-/view?usp=sharing')">TP3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1iGPBbTRR85k6cyUBBypyDfS6-d9--yJh/view?usp=sharing')">TP4</button>
+
+  </div>
+
+  <div class="module-options" id="TechnologieduwebOptions" style="display: none;">
+    <button  id="coursButton6"  onclick="toggleAdditionalButtons('additionalButtonsContainerT')">Cours</button>
+    <div id="additionalButtonsContainerT" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1N0CNkWx71K3Ub-h2nWR4kCGxars8nM2p/view?usp=sharing')">CHAPITRE 1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1grmZMnHU0DeZTp_sUXTSRwnhPlFbcLtX/view?usp=sharing')">CHAPITRE 2</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1TXIgMxmwMD0GlaP3HyLIJf5mYpRjlEMS/view?usp=sharing')">CHAPITRE 3</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1BXKfMwVr79Dzm4a47YV8M9FZxzHaq1RY/view?usp=sharing')">CHAPITRE 4</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1xFnkTbGEkGgAaZwmwuy0ZcjCoVUuuGfO/view?usp=sharing')">CHAPITRE 5</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1PlPqOv-msVl6NmsjShmLNAgSSQOjqM1h/view?usp=sharing')">CHAPITRE 6</button></div>
+    <button id="tdButton6"  onclick="toggleAdditionalButtons('additionalButtonsContainerTT')">TD</button>
+    <div id="additionalButtonsContainerTT" class="additional-buttons-container">
+      <button onclick="loadPDF('https://drive.google.com/file/d/1C8mr0k16pTm33VGDGCD9W5Y2MYowtf5y/view?usp=sharing')">TD1</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1IANzN0IRS0R7lEtHgmPm_mpqWMDUFOWc/view?usp=sharing')">TD2</button></div>
+    <button  id="tpButton4"  onclick="toggleAdditionalButtons('additionalButtonsContainerTP')">TP</button>
+    <div id="additionalButtonsContainerTP" class="additional-buttons-container">
+    <button onclick="loadPDF('https://drive.google.com/file/d/1ge8iRNNYWHJUo2YMYn92R0v94NxGFJFz/view?usp=sharing')"> TP1</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1bAW0S3oD5eMllJAVEXgXs_c98GtTQAx8/view?usp=sharing')">TP3</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1Y2pi45EiIq8Obg9WwioUzgs0tqjoM5Fm/view?usp=sharing')">TP4</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1MufWKoYdAefKEXLO4z_5SgGmX-ImnhEO/view?usp=sharing')">TP5</button>
+    <button onclick="loadPDF('https://drive.google.com/file/d/1k5Nphax--MLZJ_4g98TGsK596Wz6Wzzi/view?usp=sharing')">TP6</button>
+      <button onclick="loadPDF('https://drive.google.com/file/d/1GM60K93KpQS-pDmc-gt_lE-kabqWepq8/view?usp=sharing')">TP7</button>
+       </div>
+  </div>
+ 
+</body>
+</html>
+
